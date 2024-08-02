@@ -1,0 +1,100 @@
+#hero{
+    width: 100%;
+    height: 100vh;
+    padding: 2vw 1vw;
+}
+
+#leaflet{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+#left{
+    height: 100%;
+    width: 69%;
+    position: relative;
+    cursor: pointer;
+    background-color: #B00100;
+    overflow:hidden;
+}
+#wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+
+
+}
+.buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#prev,#next{
+    margin-left: 20px;
+    padding: 5px 9px;
+    border-radius: 50%;
+    opacity: .8;
+}
+#next{
+    margin-right: 20px;
+
+}
+
+#dots{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    list-style-type: none;
+    display: flex;
+    gap: 1vw;
+}
+#dots li{
+    height: 7px;
+    width:20px;
+    background-color: white;
+}
+#dots li.active{
+    background-color: #fa7d1d;
+}
+.imageitems{
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+.imageitems img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#right{
+    width:29% ;
+    height: 100%;
+    display: flex; align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sideimage{
+    height: 47% ;
+    width:100%;
+    background-color:white;
+
+}
+
+.sideimage img
+{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+
+

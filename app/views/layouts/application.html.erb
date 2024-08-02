@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Applegadget</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+      />
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  </head>
+  <div id="navbar" class="navbar">
+      <nav>
+       <div><button class="menu"><i class="ri-menu-line"></i></button></div>
+        <div id="navimg">
+          <img src="https://www.applegadgetsbd.com/_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Fcommon%2Flogo.png&w=640&q=75" alt="">
+        </div>
+        <label>
+          <input type="search" placeholder="Search" size="30" name="q"> <button class="search"><i class="ri-search-line"></i></button>
+        </label>
+
+        <div class="icons" id="offer">
+          <div class = "iconsimg">
+           <img src="https://www.applegadgetsbd.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgift.347df468.png&w=64&q=75" alt="">
+          </div>
+          <div>   <h2>Offers</h2>
+            <p>Latest Offers</p></div>
+        </div>
+
+       <div class="icons" id="cart">
+           <div class = "iconsimg">
+             <img src="https://www.applegadgetsbd.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcart.c2e800a4.png&w=64&q=75" alt="">
+           </div>
+         
+         <div>   
+           <h2>Cart</h2>
+           <p>Add Items</p></div>
+       </div>
+
+        <div class="icons" id="preorder">
+          <div class = "iconsimg">
+            <img src="https://www.applegadgetsbd.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fshop.638fa252.png&w=64&q=75" alt="">
+          </div>
+          <div>
+            <h2>Pre-Order</h2>
+            <p>Order Today</p>
+          </div>
+
+        </div>
+
+        <div class="icons " id="account">
+          <div class = "iconsimg">
+            <img src="https://www.applegadgetsbd.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fuser.4115a831.png&w=64&q=75" alt="">
+          </div>
+          <div>
+            <h2>Account</h2>
+            <p>Register or Login</p>
+          </div>
+        </div>
+      </nav>
+    <div id='dropdown'>
+    <span class="phonetablet">
+      <a href=""> Phones & Tablets </a>
+      <div id="phonetablet" class="subcategory">
+        <li id="first" class="hidecategory"><a href="">Iphone & Tab</a></li>
+        <li id="second" class="hidecategory"><a href="">Samsung</a></li>
+        <li id="third" class="hidecategory"><a href="">Xiaomi</a></li>
+        <li id="fourth" class="hidecategory"><a href="">Amazon</a></li>
+        <li id="fifth" class="hidecategory"><a href="">Oneplus</a></li>
+        <li id="sixth" class="hidecategory"><a href="">Nokia</a></li>
+        <li id="seventh" class="hidecategory"><a href="">Realme</a></li>
+        <li id="eighth" class="hidecategory"><a href="">Nothing</a></li>
+        <li id="ninth" class="hidecategory"><a href="">Huawei</a></li>
+        <li id="tenth" class="hidecategory"><a href="">Infinix</a></li>
+        <li id="eleven" class="hidecategory"><a href="">Oppo</a></li>
+        <li id="twelve" class="hidecategory"><a href="">Techno</a></li>
+        <li id="thirteen" class="hidecategory"><a href="">Vivo</a></li>
+        <li id="fourteen" class="hidecategory"><a href="">Motorola</a></li>
+        <li id="fifteen" class="hidecategory"><a href="">Asus</a></li>
+        <li id="sixteen" class="hidecategory"><a href="">Zte</a></li>
+        <li id="seventeen" class="hidecategory"><a href="">Balmuda</a></li>
+      </div>
+    </span>
+      <span class="laptopdesktop">
+        <a href=""> Laptop & Desktop </a>
+           <div id="laptopdesktop" class="subcategory">
+        <li id="first" class="hidecategory"><a href="">Iphone & Tab</a></li>
+        <li id="second" class="hidecategory"><a href="">Samsung</a></li>
+        <li id="third" class="hidecategory"><a href="">Xiaomi</a></li>
+        <li id="fourth" class="hidecategory"><a href="">Amazon</a></li>
+        <li id="fifth" class="hidecategory"><a href="">Oneplus</a></li>
+        <li id="sixth" class="hidecategory"><a href="">Nokia</a></li>
+        <li id="seventh" class="hidecategory"><a href="">Realme</a></li>
+           </div>
+      </span>
+      <span class="soundequipment">
+        <a href=""> Sound Equipment </a>
+           <div id="soundequipment" class="subcategory">
+        <li id="first" class="hidecategory"><a href="">Iphone & Tab</a></li>
+        <li id="second" class="hidecategory"><a href="">Samsung</a></li>
+        <li id="third" class="hidecategory"><a href="">Xiaomi</a></li>
+        <li id="fourth" class="hidecategory"><a href="">Amazon</a></li>
+        <li id="fifth" class="hidecategory"><a href="">Oneplus</a></li>
+        <li id="sixth" class="hidecategory"><a href="">Nokia</a></li>
+        <li id="seventh" class="hidecategory"><a href="">Realme</a></li>
+           </div>
+      </span>
+      <span class="poweraccessories">
+        <a href=""> Power & Accessories </a>
+           <div id="poweraccessories" class="subcategory">
+        <li id="first" class="hidecategory"><a href="">Iphone & Tab</a></li>
+        <li id="second" class="hidecategory"><a href="">Samsung</a></li>
+        <li id="third" class="hidecategory"><a href="">Xiaomi</a></li>
+        <li id="fourth" class="hidecategory"><a href="">Amazon</a></li>
+        <li id="fifth" class="hidecategory"><a href="">Oneplus</a></li>
+        <li id="sixth" class="hidecategory"><a href="">Nokia</a></li>
+        <li id="seventh" class="hidecategory"><a href="">Realme</a></li>
+           </div>
+      </span>
+      <span class="fitnesswearable">
+        <a href=""> Fitness & Wearable</a>
+           <div id="fitnesswearable" class="subcategory">
+        <li id="first" class="hidecategory"><a href="">Iphone & Tab</a></li>
+        <li id="second" class="hidecategory"><a href="">Samsung</a></li>
+        <li id="third" class="hidecategory"><a href="">Xiaomi</a></li>
+        <li id="fourth" class="hidecategory"><a href="">Amazon</a></li>
+        <li id="fifth" class="hidecategory"><a href="">Oneplus</a></li>
+        <li id="sixth" class="hidecategory"><a href="">Nokia</a></li>
+        <li id="seventh" class="hidecategory"><a href="">Realme</a></li>
+           </div>
+      </span>
+      <span class="peripherals">
+        <a href=""> Peripherals</a>
+           <div id="peripherals " class="subcategory">
+        <li id="first" class="hidecategory"><a href="">Iphone & Tab</a></li>
+        <li id="second" class="hidecategory"><a href="">Samsung</a></li>
+        <li id="third" class="hidecategory"><a href="">Xiaomi</a></li>
+        <li id="fourth" class="hidecategory"><a href="">Amazon</a></li>
+        <li id="fifth" class="hidecategory"><a href="">Oneplus</a></li>
+        <li id="sixth" class="hidecategory"><a href="">Nokia</a></li>
+        <li id="seventh" class="hidecategory"><a href="">Realme</a></li>
+           </div>
+
+      </span>
+      <span><a href=""> Cover & Glass </a>
+      <div></div></span>
+      <span><a href=""> Smart Electronics </a>
+        <div></div>
+      </span>
+      <span><a href=""> Used Device</a>
+        <div></div>
+      </span>
+      <span><a href=""> Blog </a>
+        <div>
+
+        </div>
+      </span>
+    </div>
+
+    <div id='sidebar'>
+    <span class="phonetablet">
+      <a href=""> Phones & Tablets </a>
+      <div id="phonetablet" class="subcategory">
+        <li id="first" class="hidecategory"><a href="">Iphone & Tab</a></li>
+        <li id="second" class="hidecategory"><a href="">Samsung</a></li>
+        <li id="third" class="hidecategory"><a href="">Xiaomi</a></li>
+        <li id="fourth" class="hidecategory"><a href="">Amazon</a></li>
+        <li id="fifth" class="hidecategory"><a href="">Oneplus</a></li>
+        <li id="sixth" class="hidecategory"><a href="">Nokia</a></li>
+        <li id="seventh" class="hidecategory"><a href="">Realme</a></li>
+        <li id="eighth" class="hidecategory"><a href="">Nothing</a></li>
+        <li id="ninth" class="hidecategory"><a href="">Huawei</a></li>
+        <li id="tenth" class="hidecategory"><a href="">Infinix</a></li>
+        <li id="eleven" class="hidecategory"><a href="">Oppo</a></li>
+        <li id="twelve" class="hidecategory"><a href="">Techno</a></li>
+        <li id="thirteen" class="hidecategory"><a href="">Vivo</a></li>
+        <li id="fourteen" class="hidecategory"><a href="">Motorola</a></li>
+        <li id="fifteen" class="hidecategory"><a href="">Asus</a></li>
+        <li id="sixteen" class="hidecategory"><a href="">Zte</a></li>
+        <li id="seventeen" class="hidecategory"><a href="">Balmuda</a></li>
+      </div>
+    </span>
+      <span class="laptopdesktop">
+        <a href=""> Laptop & Desktop </a>
+           <div id="laptopdesktop" class="subcategory">
+        <li id="first" class="hidecategory"><a href="">Iphone & Tab</a></li>
+        <li id="second" class="hidecategory"><a href="">Samsung</a></li>
+        <li id="third" class="hidecategory"><a href="">Xiaomi</a></li>
+        <li id="fourth" class="hidecategory"><a href="">Amazon</a></li>
+        <li id="fifth" class="hidecategory"><a href="">Oneplus</a></li>
+        <li id="sixth" class="hidecategory"><a href="">Nokia</a></li>
+        <li id="seventh" class="hidecategory"><a href="">Realme</a></li>
+           </div>
+      </span>
+      <span class="soundequipment">
+        <a href=""> Sound Equipment </a>
+           <div id="soundequipment" class="subcategory">
+        <li id="first" class="hidecategory"><a href="">Iphone & Tab</a></li>
+        <li id="second" class="hidecategory"><a href="">Samsung</a></li>
+        <li id="third" class="hidecategory"><a href="">Xiaomi</a></li>
+        <li id="fourth" class="hidecategory"><a href="">Amazon</a></li>
+        <li id="fifth" class="hidecategory"><a href="">Oneplus</a></li>
+        <li id="sixth" class="hidecategory"><a href="">Nokia</a></li>
+        <li id="seventh" class="hidecategory"><a href="">Realme</a></li>
+           </div>
+      </span>
+      <span class="poweraccessories">
+        <a href=""> Power & Accessories </a>
+           <div id="poweraccessories" class="subcategory">
+        <li id="first" class="hidecategory"><a href="">Iphone & Tab</a></li>
+        <li id="second" class="hidecategory"><a href="">Samsung</a></li>
+        <li id="third" class="hidecategory"><a href="">Xiaomi</a></li>
+        <li id="fourth" class="hidecategory"><a href="">Amazon</a></li>
+        <li id="fifth" class="hidecategory"><a href="">Oneplus</a></li>
+        <li id="sixth" class="hidecategory"><a href="">Nokia</a></li>
+        <li id="seventh" class="hidecategory"><a href="">Realme</a></li>
+           </div>
+      </span>
+      <span class="fitnesswearable">
+        <a href=""> Fitness & Wearable</a>
+           <div id="fitnesswearable" class="subcategory">
+        <li id="first" class="hidecategory"><a href="">Iphone & Tab</a></li>
+        <li id="second" class="hidecategory"><a href="">Samsung</a></li>
+        <li id="third" class="hidecategory"><a href="">Xiaomi</a></li>
+        <li id="fourth" class="hidecategory"><a href="">Amazon</a></li>
+        <li id="fifth" class="hidecategory"><a href="">Oneplus</a></li>
+        <li id="sixth" class="hidecategory"><a href="">Nokia</a></li>
+        <li id="seventh" class="hidecategory"><a href="">Realme</a></li>
+           </div>
+      </span>
+      <span class="peripherals">
+        <a href=""> Peripherals</a>
+           <div id="peripherals " class="subcategory">
+        <li id="first" class="hidecategory"><a href="">Iphone & Tab</a></li>
+        <li id="second" class="hidecategory"><a href="">Samsung</a></li>
+        <li id="third" class="hidecategory"><a href="">Xiaomi</a></li>
+        <li id="fourth" class="hidecategory"><a href="">Amazon</a></li>
+        <li id="fifth" class="hidecategory"><a href="">Oneplus</a></li>
+        <li id="sixth" class="hidecategory"><a href="">Nokia</a></li>
+        <li id="seventh" class="hidecategory"><a href="">Realme</a></li>
+           </div>
+
+      </span>
+      <span><a href=""> Cover & Glass </a>
+      <div></div></span>
+      <span><a href=""> Smart Electronics </a>
+        <div></div>
+      </span>
+      <span><a href=""> Used Device</a>
+        <div></div>
+      </span>
+      <span><a href=""> Blog </a>
+        <div>
+
+        </div>
+      </span>
+      </div>
+
+
+
+    </div>
+  <body>
+    <%= yield %>
+  </body>
+</html>
+
+
+<script>
+      var searchbutton = document.querySelector('nav .search')
+
+      searchbutton.addEventListener('click',function(){
+           let searchbar = document.querySelector('nav input');
+           searchbar.style.display ='block' ;
+           searchbar.style.position='absolute';
+
+
+      })
+</script>

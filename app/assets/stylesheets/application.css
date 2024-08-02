@@ -1,0 +1,221 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy', sans-serif;
+}
+hmtl,body{
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+::selection {
+    background-color: #fa7d1d;
+    color: white;
+}
+
+
+#navbar nav{
+    width: 100%; height: 80px;
+    background-color: black ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    padding: 18px;
+
+
+}
+#navbar{
+    width: 100%;
+    height: 122px;
+}
+#navimg{
+    margin-right: 1vw;
+    width: 127px;
+    height: 89.5%;
+    position: relative;
+
+}
+#navimg img{
+
+    width: 100%; height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+.icons{
+    width: 12%;
+    height: 100% ;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+#offer{
+    margin-right: 6px;
+}
+#cart{
+    margin-right: 15px;
+}
+.icons h2{
+    font-size: 1.25vw;
+}
+.icons p{
+    font-size: 1.08vw;
+
+
+}
+.iconsimg{
+    width:27% ;
+    height: 90%;
+    position: relative;
+    padding: 5px ;
+    margin-right:2px ;
+}
+.iconsimg img{
+    width:100% ;
+    height: 100%;
+    object-fit: cover;
+}
+nav label{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+   position: relative;
+}
+nav .search{
+    position:absolute;
+    right: 12%;
+    font-size: 2vw;
+    background-color: white;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    border: none;
+}
+nav .search i{
+    font-size: 28px;
+    color:#fa7d1d ;
+    opacity: .8;
+}
+nav input{
+    margin-right: 3.3vw;
+    padding:.97vw 4.8vw .97vw 1vw  ;
+    background-color: white;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    outline:none ;
+    border: none;
+
+}
+
+#dropdown{
+    width: 100%;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 8px;
+   box-shadow:  0px -30px 50px black;
+}
+#dropdown > span a{
+   text-decoration: none;
+    font-size: .9rem;
+    color: black;
+    transition: .5s;
+    margin-top: 20px;
+
+}
+#dropdown span{
+    margin-top: 15px;
+    height: 80%;
+
+}
+#dropdown span:hover >a{
+     color: #fa7d1d;
+     transition: .3s;
+}
+#dropdown span:hover >div{
+    transform:translateY(-3px);
+    z-index: 9;
+    opacity: 1;
+    transition: .4s;
+}
+
+.subcategory{
+    position: absolute;
+    margin-top: 11px;
+    transform: translateY(15px);
+    background-color: white;
+    box-shadow:  2px 0 3px -2px rgba(0, 0, 0, 0.49);
+    transition: .2s;
+    z-index: -1;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.subcategory li{
+    width: 100% ;
+    list-style-type: none;
+    padding: 5px 6.5vw 5px 15px;
+    font-size: 20px;
+}
+.subcategory li:hover{
+    background-color: #fa7d1d;
+    transition: .5s;
+}
+nav .menu{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    border: none;
+    display: none;
+}
+#sidebar{
+    display: none;
+}
+@media(max-width: 1200px)
+{
+
+   .icons,#dropdown{
+       display:none;
+   }
+
+    #navbar nav{
+
+        justify-content: space-around;
+    }
+    #navbar input{
+       display: none;
+    }
+    #navbar button{
+        background-color:black;
+    }
+    nav .menu {
+        display:block;
+    }
+
+    .showsearchbar{
+        display: block;
+        width:100%;
+
+
+    }
+}
